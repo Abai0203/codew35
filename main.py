@@ -20,3 +20,18 @@ def likes(names):
     if n == 3:
         return f"{names[0]}, {names[1]} and {names[2]} like this"
     return f"{names[0]}, {names[1]} and {n - 2} others like this"
+
+
+# #2 Тролли атакуют ваш раздел комментариев!
+# Распространенный способ решения этой проблемы — удалить все гласные буквы из комментариев троллей, тем самым нейтрализовав угрозу.
+# Ваша задача — написать функцию, которая принимает строку и возвращает новую строку, из которой удалены все гласные.
+# Например, строка "This website is for losers LOL!" превратится в "Ths wbst s fr lsrs LL!".
+# Примечание: в данном случае слово «ката» yне считается гласной буквой.
+
+def disemvowel(text):
+    vowels = "aeiouAEIOU"
+    result = ""
+    for ch in text:
+        if ch not in vowels:
+            result += ch
+    return result
