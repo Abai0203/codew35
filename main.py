@@ -151,3 +151,16 @@ def solution(number):
     if number < 0:
         return 0
     return sum(x for x in range(number) if x % 3 == 0 or x % 5 == 0)
+
+
+# 15 
+
+def pig_it(text):
+    words = text.split()
+    result = []
+    for word in words:
+        if word.isalpha():
+            result.append(word[1:] + word[0] + "ay")
+        else:
+            result.append(word)
+    return " ".join(result)
