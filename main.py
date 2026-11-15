@@ -259,3 +259,8 @@ def xor(a, b):
 
 def find_deleted_number(arr, mixed_arr):
     return sum(arr) - sum(mixed_arr)
+
+# 27 
+
+def eq_sum_powdig(h_max, exp):
+    return [i for i in range(2, h_max + 1) if sum(int(c) ** exp for c in str(i)) == i]
