@@ -217,3 +217,12 @@ def triangular(n):
     if n < 0:
         return 0
     return n * (n + 1) // 2
+
+# 22 
+
+def merge_strings(first, second):
+    for i in range(min(len(first), len(second)), 0, -1):
+        if first.endswith(second[:i]):
+            return first + second[i:]
+
+    return first + second
