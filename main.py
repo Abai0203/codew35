@@ -264,3 +264,8 @@ def find_deleted_number(arr, mixed_arr):
 
 def eq_sum_powdig(h_max, exp):
     return [i for i in range(2, h_max + 1) if sum(int(c) ** exp for c in str(i)) == i]
+
+# 28 
+
+def solution(digits):
+    return max(int(digits[i : i + 5]) for i in range(len(digits) - 4))
