@@ -237,3 +237,15 @@ def isPP(n):
                 return [m, k]
             k += 1
     return None
+
+
+# 24
+
+import math
+import re
+
+def travel_chessboard(s):
+    x1, y1, x2, y2 = map(int, re.findall(r'\d+', s))
+    dx = x2 - x1
+    dy = y2 - y1
+    return math.comb(dx + dy, dx)
