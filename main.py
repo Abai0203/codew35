@@ -210,3 +210,10 @@ def max_sequence(arr):
 
 def colour_association(arr):
     return [{item[0]: item[1]} for item in arr]
+
+# 21
+
+def triangular(n):
+    if n < 0:
+        return 0
+    return n * (n + 1) // 2
