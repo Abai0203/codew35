@@ -303,3 +303,9 @@ def no_boring_zeros(n):
     if n == 0:
         return 0
     return int(str(n).rstrip('0'))
+
+#34
+
+def vowel_indices(word):
+    vowels = "aeiouyAEIOUY"
+    return [i + 1 for i, char in enumerate(word) if char in vowels]
