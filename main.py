@@ -279,3 +279,10 @@ def solution(pairs):
 
 def potatoes(p0, w0, p1):
     return (w0 * (100 - p0)) // (100 - p1)
+
+#31
+
+def remove(string: str) -> str:
+    exclamations = string.count('!')
+    clean_str = ''.join(c for c in string if c != '!')
+    return clean_str + '!' * exclamations
