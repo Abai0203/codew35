@@ -164,3 +164,13 @@ def pig_it(text):
         else:
             result.append(word)
     return " ".join(result)
+
+# 16 
+
+def fib(n):
+    a, b = 0, 1
+
+    for i in range(n - 1):
+        a, b = b, a + b
+
+    return a
