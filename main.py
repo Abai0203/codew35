@@ -174,3 +174,11 @@ def fib(n):
         a, b = b, a + b
 
     return a
+
+# 17 
+
+def find_in_array(seq, predicate):
+    for i in range(len(seq)):
+        if predicate(seq[i], i):
+            return i
+    return -1
