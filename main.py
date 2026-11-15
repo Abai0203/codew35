@@ -286,3 +286,13 @@ def remove(string: str) -> str:
     exclamations = string.count('!')
     clean_str = ''.join(c for c in string if c != '!')
     return clean_str + '!' * exclamations
+
+# 32
+
+def fibonacci(n: int) -> int:
+    """Given a positive argument n, returns the nth term of the Fibonacci Sequence.
+    """
+    a, b = 0, 1
+    for _ in range(n - 1):
+        a, b = b, a + b
+    return b if n > 0 else 0
