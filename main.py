@@ -192,3 +192,15 @@ def last_survivor(letters, coords):
         letters.pop(i)
 
     return letters[0]
+
+# 19
+
+def max_sequence(arr):
+    max_sum = 0
+    current = 0
+
+    for i in arr:
+        current = max(0, current + i)
+        max_sum = max(max_sum, current)
+
+    return max_sum
