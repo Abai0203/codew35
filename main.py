@@ -269,3 +269,9 @@ def eq_sum_powdig(h_max, exp):
 
 def solution(digits):
     return max(int(digits[i : i + 5]) for i in range(len(digits) - 4))
+
+
+# 29 
+
+def solution(pairs):
+    return ",".join(f"{k} = {v}" for k, v in pairs.items())
