@@ -49,3 +49,21 @@ print(find_it([0]))
 print(find_it([1, 1, 2]))
 print(find_it([0, 1, 0, 1, 0]))
 print(find_it([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1]))
+
+
+# 4 
+
+
+def find_outlier(integers):
+    if sum(i % 2 for i in integers[:3]) > 1:
+        for i in integers:
+            if i % 2 == 0:
+                return i
+            
+    else:
+        for i in integers:
+            if i % 2 != 0:
+                return i
+            
+print(find_outlier([2, 4, 0, 100, 4, 11, 2602, 36]))
+print(find_outlier([160, 3, 1719, 19, 11, 13, -21]))
