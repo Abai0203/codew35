@@ -102,3 +102,9 @@ def find_missing_letter(chars):
     for a, b in zip(chars, chars[1:]):
         if ord(b) - ord(a) > 1:
             return chr(ord(a) + 1)
+
+#9 
+
+def create_phone_number(n):
+    #your code here
+    return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
