@@ -254,3 +254,8 @@ def travel_chessboard(s):
 
 def xor(a, b):
     return bool(a) != bool(b)
+
+# 26 
+
+def find_deleted_number(arr, mixed_arr):
+    return sum(arr) - sum(mixed_arr)
