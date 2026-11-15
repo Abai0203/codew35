@@ -182,3 +182,13 @@ def find_in_array(seq, predicate):
         if predicate(seq[i], i):
             return i
     return -1
+
+# 18
+
+def last_survivor(letters, coords):
+    letters = list(letters)
+
+    for i in coords:
+        letters.pop(i)
+
+    return letters[0]
