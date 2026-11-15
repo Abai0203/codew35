@@ -108,3 +108,9 @@ def find_missing_letter(chars):
 def create_phone_number(n):
     #your code here
     return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
+
+# 10
+
+def high(x):
+    words = x.split()
+    return max(words, key=lambda w: sum(ord(c) - ord('a') + 1 for c in w))
