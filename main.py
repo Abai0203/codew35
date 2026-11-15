@@ -125,3 +125,17 @@ def sort_array(source_array):
         if source_array[i] % 2 != 0:
             source_array[i] = odd.pop(0)
     return source_array
+
+
+# 12
+
+def order(sentence):
+    words = sentence.split()
+    result = []
+
+    for i in range(1, 10):
+        for word in words:
+            if str(i) in word:
+                result.append(word)
+
+    return " ".join(result)
