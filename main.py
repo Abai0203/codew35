@@ -309,3 +309,9 @@ def no_boring_zeros(n):
 def vowel_indices(word):
     vowels = "aeiouyAEIOUY"
     return [i + 1 for i, char in enumerate(word) if char in vowels]
+
+# 35
+
+def num_combo(xs: list, n: int):
+    target = sum(xs) - n
+    return xs.count(target)
