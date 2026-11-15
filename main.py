@@ -86,3 +86,12 @@ def find_uniq(xs):
     for x in xs:
         if x != common:
             return x
+
+# 7 
+
+def is_pangram(st):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    for letter in alphabet:
+        if letter not in st.lower():
+            return False
+    return True
