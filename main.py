@@ -274,3 +274,8 @@ def solution(digits):
 
 def solution(pairs):
     return ",".join(f"{k} = {v}" for k, v in pairs.items())
+
+# 30
+
+def potatoes(p0, w0, p1):
+    return (w0 * (100 - p0)) // (100 - p1)
