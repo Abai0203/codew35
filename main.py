@@ -95,3 +95,10 @@ def is_pangram(st):
         if letter not in st.lower():
             return False
     return True
+
+# 8
+
+def find_missing_letter(chars):
+    for a, b in zip(chars, chars[1:]):
+        if ord(b) - ord(a) > 1:
+            return chr(ord(a) + 1)
