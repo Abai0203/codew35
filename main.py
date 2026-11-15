@@ -77,3 +77,12 @@ def get_middle(s):
         return s[mid - 1:mid + 1]
     else:
         return s[mid]
+
+# 6
+
+def find_uniq(xs):
+    a, b, c = xs[0], xs[1], xs[2]
+    common = a if a == b or a == c else b
+    for x in xs:
+        if x != common:
+            return x
