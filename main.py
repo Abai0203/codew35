@@ -296,3 +296,10 @@ def fibonacci(n: int) -> int:
     for _ in range(n - 1):
         a, b = b, a + b
     return b if n > 0 else 0
+
+# 33
+
+def no_boring_zeros(n):
+    if n == 0:
+        return 0
+    return int(str(n).rstrip('0'))
