@@ -139,3 +139,8 @@ def order(sentence):
                 result.append(word)
 
     return " ".join(result)
+
+# 13
+
+def camel_case(s):
+    return s.title().replace(' ','')
