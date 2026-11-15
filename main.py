@@ -204,3 +204,9 @@ def max_sequence(arr):
         max_sum = max(max_sum, current)
 
     return max_sum
+
+
+# 20
+
+def colour_association(arr):
+    return [{item[0]: item[1]} for item in arr]
