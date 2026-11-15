@@ -249,3 +249,8 @@ def travel_chessboard(s):
     dx = x2 - x1
     dy = y2 - y1
     return math.comb(dx + dy, dx)
+
+# 25
+
+def xor(a, b):
+    return bool(a) != bool(b)
